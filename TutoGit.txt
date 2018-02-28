@@ -1,0 +1,26 @@
+Salut Stacy, bienvenu dans ce petit tuto/rappel git ;)
+
+Pour toutes action, bien verifier d'être dans le bon dossier (sinon rien ne marchera), 
+donc soit avec le gitBash (tu peux faire clic droit dans le dossier et "gitBash here" je crois,
+soit en écrivant "cmd" dans la barre d'adresse de l'explorateur (il faut etre dans le dossier).
+
+
+Commande pour récuperer ce qu'il y a dans le git (pull) :
+	-  git pull		(ca va c'est pas trop dur)
+
+
+Commandes pour envoyer des trucs sur le git (push) : 
+	-  git add *							(ca c'est pour que git analyse les différences)
+	-  git commit -m "ton message qui résume ce que tu as push"	(ca c'est pour les ajouter dans ton git, le message est obligatoire)
+	-  git push							(et ca c'est pour l'envoyer a tout le monde)
+
+
+NB: ne pas ecrire le tiret (-), c'est juste pour lister, ecris direct git.......
+
+Si jamais tu veux commit mais que ca marche pas, verifie avec un "git status". 
+Cette commande te permet de voir si tu dois pas pull un truc, tu ne pourras pas push tant que tu ne sera pas à jour avec le git actuel.
+(sinon bah check online ou envoie moi un message mdrrr)
+
+
+NB²: en theorie tu devrais pas avoir besoin de cette commande mais bon, pour clonner le git (le créer sur ton pc):
+	-  git clone https://github.com/Oznerologos/TPphp.git
