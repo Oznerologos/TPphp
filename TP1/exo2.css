@@ -1,0 +1,11 @@
+table, th, td{
+  border: solid 1px;
+}
+
+td{
+  width: 300px;
+}
+
+img{
+  width: 100px;
+}
