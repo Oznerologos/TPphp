@@ -7,7 +7,7 @@ $sondages = array($s1, $s2, $s3);
 $t = rechercheSondage($sondages, "heureux");
 foreach($t as $sondage) genererFormulaire($sondage);
 
-//test des fonctions
+//fonction qui génère le formulaire
 
     function genererFormulaire($sondage){
         echo "<form>".$sondage["question"];
@@ -22,7 +22,7 @@ foreach($t as $sondage) genererFormulaire($sondage);
         echo "</form>";
 
 }
-
+//fonction qui cherche le sondage par rapport au mot clé heureux!
 function rechercheSondage($sondages, $motcle)
 {
     $t = [];
