@@ -1,11 +1,11 @@
 <?php
 
-function ConvertToInt ($n, $baseIn, $baseTo=10) {
-	echo base_convert($n, $baseIn, $baseTo);
+function ConvertToInt ($n, $baseIn, $baseTo) {
+	echo base_convert($n, $baseIn, 10);
 }
 
-function ConvertIntToBase ($entier,$baseIn=10, $baseTo) {
-	echo base_convert($entier, $baseIn, $baseTo);
+function ConvertIntToBase ($entier, $baseIn, $baseTo) {
+	echo base_convert($entier, 10, $baseTo);
 }
 
 function ChangerBase ($entierAConvertir, $SaBaseInitial, $LaBaseVisee) {
