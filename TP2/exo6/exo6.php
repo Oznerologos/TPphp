@@ -25,7 +25,7 @@ fclose($monfichier);
 
 
 function lire(){
-    $id = fopen("log.txt","r");
+    $id = fopen("Visite.txt","r");
     $t = array();
     while ($ligne=fgets($id)) {
         //$t = explode("/", $ligne);
@@ -33,7 +33,7 @@ function lire(){
     }
     ?>
 <table border="1">
-    <tr><th>Heur</th><th>Nombre de vues</th>
+    <tr><th>Heures</th><th>Nombre de vues</th>
     <?php
     $a1 = 0;
     $a2 = 0;

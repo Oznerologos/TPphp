@@ -11,7 +11,7 @@ function ConvertIntToBase ($entier, $baseIn, $baseTo) {
 function ChangerBase ($entierAConvertir, $SaBaseInitial, $LaBaseVisee) {
 	echo base_convert($entierAConvertir, $SaBaseInitial, $LaBaseVisee);
 }
-
+echo "<h3>Conversion en entier </h3>";
 ConvertToInt(10,2,10);
 echo "<br/>";
 ConvertToInt(23,7,10);
@@ -24,7 +24,7 @@ ConvertToInt("A",11,10);
 
 echo "<br>________________________<br><br>";
 
-
+echo "<h3> Conversion entier en base </h3>";
 ConvertIntToBase(2,10,2);
 echo "<br/>";
 ConvertIntToBase(17,10,7);

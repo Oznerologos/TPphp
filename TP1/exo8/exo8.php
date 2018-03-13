@@ -1,14 +1,44 @@
 <?php
 $nb = 1;
 echo "<div align=\"center\">";
-while ($nb <> 8){ // Soit 8 le nombre de chiffres à la base de la pyramide
-  $nb2 = $nb;
-  while ($nb2 <> 0){
-    echo "1";
-    $nb2 = $nb2-1;
+function printSuite($i){
+  $nombre = 1;
+  $string = "1";
+
+  while ($nombre <= $i) {
+    echo $string . "<br>";
+    $string = nextSuite($string);
+    $nombre++;
+
   }
-  $nb = $nb+1;
-  echo "<br>";
 }
-echo "</div>";
+
+function nextSuite($str){
+  $string = "";
+  $i = 0;
+  $nombre = 0;
+  $chiffre = intval($str[$i]);
+  while ($i < strlen($str)) {
+    while (intval($str[$i]) == $chiffre) {
+      $nombre++;
+      $i++;
+      if($i >= strlen($str))
+      break;
+    }
+    $string =$string.strval($nombre).strval($chiffre);
+    $nombre = 0;
+    if($i < strlen($str))
+      $chiffre = intval($str[$i]);
+  }
+  return $string;
+}
+ printSuite(7) ;
 ?>
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+
+  </body>
+</html>
