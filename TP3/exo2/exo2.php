@@ -1,36 +1,40 @@
 <form method="POST" enctype="multipart/form-data">
-    <input type="file" name="img">
-    <input type="submit" value="Afficher">
+    <input type="file" name="img"><br><br>
+    <input type="submit" value="Afficher l'image">
 </form>
 
 <?php
+
 if (isset($_FILES['img'])) {
     $infosfichier = pathinfo($_FILES['img']['name']);
     $extension_upload = $infosfichier['extension'];
     $extensions_autorisees = array('jpg', 'png', 'jpeg');
     if (in_array($extension_upload, $extensions_autorisees)) {
-        $file1 = $_FILES['img']['tmp_name'];
-        $file2 = "gal/image_" . $_FILES['img']['name'];
-        $result = move_uploaded_file($file1, $file2);
+        $fichier1 = $_FILES['img']['tmp_name'];
+        $fichier2 = "gallery/img_" . $_FILES['img']['name'];
+        $resultat = move_uploaded_file($fichier1, $fichier2);
     }
 }
-    function createGallery(){
-  $dir = 'gal';
-  $files1 = array_slice(scandir($dir), 2);
 
-  for($i = 0; $i < count($files1); $i++){
-      echo "<br><form action='".$_SERVER['PHP_SELF']."' method='post'><img src='gal/$files1[$i]' alt='photo de la galerie' class='imgExo2'><br/>
-      <input hidden name='pictureName' value='gal\/$files1[$i]'>
-      <input type='submit' name='gallerySubmit' value='Supprimer'></form><br>";
+function createGallery(){
+  $dir = 'gallery';
+  $ListeImg = array_slice(scandir($dir), 2);
+
+  for($i = 0; $i < count($ListeImg); $i++){
+      echo "<br><form action='".$_SERVER['PHP_SELF']."' method='post'><img src='gallery/$ListeImg[$i]' alt='photo de la galerie'><br/>
+      <input hidden name='NomImg' value='gallery\/$ListeImg[$i]'>
+      <input type='submit' name='SupImg' value='Supprimer'></form><br>";
   }
-  }
-  createGallery();
-  function removePicture($filename){
-    unlink($filename);
 }
 
-if (isset($_POST['gallerySubmit']) && $_POST['gallerySubmit'] == 'Supprimer'){
-    removePicture($_POST['pictureName']);
-    echo '<meta http-equiv="refresh" content="0" />';
+createGallery();
+function removePicture($NomImg){
+  unlink($NomImg);
 }
+
+if (isset($_POST['SupImg']) && $_POST['SupImg'] == 'Supprimer'){
+  removePicture($_POST['NomImg']);
+  echo '<meta http-equiv="refresh" content="0" />';
+}
+
 ?>
