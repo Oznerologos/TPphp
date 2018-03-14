@@ -45,20 +45,23 @@ function ecrireNombre($nomFichier,$nombre){
 }
 
 function compterVisites(){
-    $fichier = fopen('fichier.txt','r+');
-    $nbVues = fgets($ressource);
+    $fichier = fopen('compteur.txt','r+');
+    $nbVues = fgets($fichier);
 if($nbVues==""){
     $nbVues=0;
 }
 $nbVues++;
-    fseek($ressource,0);
-    fputs($ressource,$nbVues);
+    fseek($fichier,0);
+    fputs($fichier,$nbVues);
     fclose($fichier);
 }
 function afficherVisites(){
-lireNombre('fichier.txt');
+
+lireNombre('compteur.txt');
+
   echo 'Cette page a été consulté : '.$nbVues.' fois';
+
 }
 
-
+afficherVisites();
    ?>
