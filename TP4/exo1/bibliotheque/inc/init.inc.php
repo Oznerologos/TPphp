@@ -1,6 +1,6 @@
 <?php
 // Connexion à la BDD.
-$mysqli = new mysqli("localhost", "root", "", "bibliothequetp");
+$mysqli = new mysqli("localhost", "root", "", "bibliotheque");
 if ($mysqli->connect_error) die('Un problème est survenu lors de la tentative de connexion à la BDD : ' . $mysqli->connect_error);
 //------------------------------------------------------------------------------------------
 // Initialisation variables.

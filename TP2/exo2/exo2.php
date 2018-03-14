@@ -1,9 +1,5 @@
 <?php  ?>
 
-
-
-
-
 <form  action='<?php echo $_SERVER["PHP_SELF"]; ?>' method='post'>
   <h1>EXERCICE 3 du TP1</h1>
  <p>Règles :<input type="text" name="v1" value=" <?php echo $valeur1; ?> "/> </p>

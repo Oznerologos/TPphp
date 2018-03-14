@@ -1,17 +1,17 @@
 <?php
 
-function ConvertToInt ($n, $baseIn, $baseTo=10) {
-	echo base_convert($n, $baseIn, $baseTo);
+function ConvertToInt ($n, $baseIn, $baseTo) {
+	echo base_convert($n, $baseIn, 10);
 }
 
-function ConvertIntToBase ($entier,$baseIn=10, $baseTo) {
-	echo base_convert($entier, $baseIn, $baseTo);
+function ConvertIntToBase ($entier, $baseIn, $baseTo) {
+	echo base_convert($entier, 10, $baseTo);
 }
 
 function ChangerBase ($entierAConvertir, $SaBaseInitial, $LaBaseVisee) {
 	echo base_convert($entierAConvertir, $SaBaseInitial, $LaBaseVisee);
 }
-
+echo "<h3>Conversion en entier </h3>";
 ConvertToInt(10,2,10);
 echo "<br/>";
 ConvertToInt(23,7,10);
@@ -24,7 +24,7 @@ ConvertToInt("A",11,10);
 
 echo "<br>________________________<br><br>";
 
-
+echo "<h3> Conversion entier en base </h3>";
 ConvertIntToBase(2,10,2);
 echo "<br/>";
 ConvertIntToBase(17,10,7);
