@@ -38,4 +38,4 @@
 </form>
 
 
-<?php echo "Ce fichier a ete consulte : ".$NombreClics; ?>
+<?php echo "Ce fichier a ete telecharge : ".$NombreClics." (Veuillez rafraichir la page pour que le compteur se mette a jour)"; ?>
