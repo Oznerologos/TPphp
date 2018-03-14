@@ -34,8 +34,12 @@ function lireNombre($nomFichier){
   $nbVues = fgets($fichier);
   if($nbVues==""){
       $nbVues=0;
+      return $nbVues;
+    }
+  else {
+    return $nbVues;
+  }
   fclose($fichier);
-}
 }
 
 function ecrireNombre($nomFichier,$nombre){
@@ -56,10 +60,8 @@ $nbVues++;
     fclose($fichier);
 }
 function afficherVisites(){
-
-lireNombre('compteur.txt');
-
-  echo 'Cette page a été consulté : '.$nbVues.' fois';
+  $contenu = lireNombre('compteur.txt');
+  echo 'Cette page a été consulté : '.$contenu.' fois';
 
 }
 
