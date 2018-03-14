@@ -1,14 +1,15 @@
+<h1>Générer un tableau</h1>
   <link rel="stylesheet" href="style.css">
 
     <?php
-    function genererTableau(){
+    function genererTab(){
         echo "<table border=\"1\"><tr><th class='prenom'>Prenom</th><th class='nom' >Nom</th><th class='photo'>Photo</th></tr>";
         $document = file("TP2_exo5.txt");
 
 
         for ($i = 0; $i < count($document); $i++){
             echo "<br/>";
-            if(!ctype_space($document[$i]) && $fiche[$i] != ''){
+            if(!ctype_space($document[$i]) && $document[$i] != ''){
 
                 $tab = explode(";", $document[$i]);
 
@@ -18,7 +19,7 @@
         echo '</table>';
     }
 
-    genererTableau();
+    genererTab();
     echo "</body></html>";
 
     ?>
