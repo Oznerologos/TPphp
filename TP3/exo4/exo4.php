@@ -28,7 +28,9 @@ function createCSS(){
       $taille = $_COOKIE["taille"];
     };
 
-    echo "body{color:".$couleur.";font-size:".$taille.";}";?>'
+    echo "body{color:".$couleur.";font-size:".$taille.";}";
+
+    ?>'
     );
   }
 };

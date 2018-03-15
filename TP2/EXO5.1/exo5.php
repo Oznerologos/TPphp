@@ -1,6 +1,12 @@
-<h1>Générer un tableau</h1>
-  <link rel="stylesheet" href="style.css">
-
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>TP2 exo5</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Générer un tableau</h1>
     <?php
     function genererTab(){
         echo "<table border=\"1\"><tr><th class='prenom'>Prenom</th><th class='nom' >Nom</th><th class='photo'>Photo</th></tr>";
@@ -23,3 +29,5 @@
     echo "</body></html>";
 
     ?>
+  </body>
+</html>
