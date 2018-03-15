@@ -23,7 +23,7 @@
     <br>
     <label>Résultat:</label>
     <?php
-require("../../tp1/exo3/exo3.php");
+require("../../tp1/exo3/exo3_fonction.php");
 if(isset($_REQUEST["Analyser"])){
   analyser($_REQUEST["regle"], $_REQUEST["clés"]);
 }
