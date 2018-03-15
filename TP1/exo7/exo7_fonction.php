@@ -1,20 +1,20 @@
 <?php
 /*
 function ConvertToInt ($n, $baseIn, $baseTo) {
-	$JeDetesteOlivier = base_convert($n, $baseIn, 10);
-	var_dump($JeDetesteOlivier);
+	$convertisseur = base_convert($n, $baseIn, 10);
+	var_dump($convertisseur);
 }
 
 function ConvertIntToBase ($entier, $baseIn, $baseTo) {
-	$JeDetesteOlivier = base_convert($entier, 10, $baseTo);
-	var_dump($JeDetesteOlivier);
+	$convertisseur = base_convert($entier, 10, $baseTo);
+	var_dump($convertisseur);
 }*/
 
 function ChangerBase ($entierAConvertir, $SaBaseInitial, $LaBaseVisee) {
 	intval($entierAConvertir);
 
-	$JeDetesteOlivier = base_convert($entierAConvertir, $SaBaseInitial, $LaBaseVisee);
-	echo $JeDetesteOlivier;
+	$convertisseur = base_convert($entierAConvertir, $SaBaseInitial, $LaBaseVisee);
+	echo $convertisseur;
 }
 
 ?>
