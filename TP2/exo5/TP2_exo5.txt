@@ -1,5 +1,8 @@
 Victor;Hugo;http://upload.wikimedia.org/wikipedia/commons/5/5a/Bonnat_Hugo001z.jpg
+
 Jean;de La Fontaine;http://upload.wikimedia.org/wikipedia/commons/e/e1/La_Fontaine_par_Rigaud.jpg
+
 Pierre;Corneille;http://upload.wikimedia.org/wikipedia/commons/2/2a/Pierre_Corneille_2.jpg
+
 Jean;Racine;http://upload.wikimedia.org/wikipedia/commons/d/d5/Jean_racine.jpg
 

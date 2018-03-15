@@ -1,7 +1,7 @@
 
 
 <?php
-echo "<h1>Exercice 3</h1>";
+//echo "<h1>Exercice 3</h1>";
 function analyser($strA, $strB){
   $strAExplo = explode(" ",$strA);
   $strAImplo = implode("", $strAExplo);
@@ -21,20 +21,7 @@ function analyser($strA, $strB){
     $srch = array_search($strBExplo2[$b], $cle);
     echo "L'indice ".$strBExplo2[$b]." possede la valeur : ".$val[$srch]."</br>";
   }
+
 };
- ?>
-
-<form method="post">
-  <label for="regles">Regles d'analyse : </label><input type="text" name="regles" id="regles" placeholder="ex : a->b, c->w, d->e"><br><br>
-  <label for="clefs"> Clef à analyser : </label><input type="text" name="clefs" id="clefs" placeholder="ex : a, e "><br><br>
-  <input type="submit" value="Analyser">
-</form>
-
-
-<?php
-if ($_POST) {
-  analyser($_POST['regles'], $_POST['clefs']);
-}
-
-
+//analyser("a->b,z->x,e->y, c->d,f->g", "a, f");
  ?>
