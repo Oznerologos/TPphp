@@ -1,16 +1,15 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>EXO3 tp1</title>
+  </head>
+  <body>
 <?php
+require('./exo7_fonction.php');
 
-function ConvertToInt ($n, $baseIn, $baseTo) {
-	echo base_convert($n, $baseIn, 10);
-}
 
-function ConvertIntToBase ($entier, $baseIn, $baseTo) {
-	echo base_convert($entier, 10, $baseTo);
-}
-
-function ChangerBase ($entierAConvertir, $SaBaseInitial, $LaBaseVisee) {
-	echo base_convert($entierAConvertir, $SaBaseInitial, $LaBaseVisee);
-}
 echo "<h3>Conversion en entier </h3>";
 ConvertToInt(10,2,10);
 echo "<br/>";
@@ -35,8 +34,4 @@ ConvertIntToBase(123,10,10);
 echo "<br/>";
 ConvertIntToBase(10,10,11);
 
-
-
-echo "</body>
-</html>";
 ?>
